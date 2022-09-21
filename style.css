@@ -5,4 +5,70 @@ html, body {
 
 h1{
   text-align: center;
+  text-decoration: underline;
+  color: #131515; 
+  background-color: white;
+  font-family: "Sofia", sans-serif;
+}
+body{
+  background-color: #dcdcdc; 
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 5px;
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-style: solid;
+}
+
+.grid-container > div {
+  background-color: #dcdcdc);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+} 
+
+.item3{
+  font-size: 10px;
+  font-family: "Sofia", sans-serif; 
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  
+}
+
+.item4{
+  border-style: solid;
+  font-family: "Sofia", sans-serif;
+}
+
+.item2{
+  border-style: solid; 
+  font-family: "Sofia", sans-serif;
+}
+.item1{
+  text-decoration: underline; 
+  font-family: "Sofia", sans-serif;
+}
+
+p{
+  text-decoration: underline;
+  font-style: bold;
+  font-family: "Sofia", sans-serif; 
+}
+
+img{
+  width:100%;
+  height:auto; 
 }
